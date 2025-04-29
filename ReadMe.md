@@ -73,7 +73,7 @@ Please ensure your code follows the existing style and conventions.
 
 ## License
 
-This project is licensed under the GNU Lesser General Public License - see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the GNU Lesser General Public License - see the [LICENSE.txt](app/src/main/java/com/example/book_summary_project/docs/LICENSE.txt) file for details.
 
 ## Contact
 
