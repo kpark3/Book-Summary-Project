@@ -51,6 +51,7 @@ import java.time.format.DateTimeFormatter
  * This composable function provides the UI for the book summarization feature.
  * It allows users to input a book name and an optional prompt, select a language and summary length,
  * generate a summary using the Gemini API, and save the generated summary to a Firestore database.
+ * The summary is displayed in a scrollable text field.
  */
 @RequiresApi(Build.VERSION_CODES.O)
 @OptIn(ExperimentalMaterial3Api::class)

@@ -34,6 +34,17 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
+
+/**
+ * Main Activity:
+ * This is the main entry point of the application.
+ * It sets up the UI and navigation using Jetpack Compose.
+ *
+ * @property navController: NavHostController
+ * @property isLoggedIn: Boolean
+ *
+ * @return Unit
+ */
 class MainActivity : ComponentActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -102,6 +113,7 @@ fun MainScreen(navController: NavHostController) {
                 )
             }
 
+            // Destination routes with corresponding composables and navigation logic.
             composable(Destination.Summary.route) { SummaryScreen() }
             composable(Destination.SavedBooks.route) { SavedBooksScreen() }
             composable(Destination.Profile.route) {

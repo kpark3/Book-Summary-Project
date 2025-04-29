@@ -5,6 +5,20 @@ import android.content.Context
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
+
+/** createUserWithEmail function:
+ * This function creates a new user account using Firebase Authentication.
+ * It takes the context, email, password, onSuccess callback, and onFailure callback as parameters.
+ * If the account creation is successful, it shows a toast message and calls the onSuccess callback.
+ *
+ * @param context The application context.
+ * @param email The email address of the new user.
+ * @param password The password of the new user.
+ * @param onSuccess A callback function to be executed when the account creation is successful.
+ * @param onFailure A callback function to be executed when the account creation fails.
+ *
+ * @return Unit
+ */
 fun createUserWithEmail(
     context: Context,
     email: String,

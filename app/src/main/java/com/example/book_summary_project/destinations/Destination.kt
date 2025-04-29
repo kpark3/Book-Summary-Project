@@ -4,6 +4,10 @@ package com.example.book_summary_project.destinations
  * Sealed class representing the different destinations in the navigation graph.
  * Each destination has a unique route string that identifies it.
  * Splash, Summary, SavedBooks, and Profile are the possible destinations.
+ *
+ * @param route The unique route string for the destination.
+ *
+ * @return Unit
  */
 sealed class Destination(val route: String) {
     object Splash : Destination("splash")

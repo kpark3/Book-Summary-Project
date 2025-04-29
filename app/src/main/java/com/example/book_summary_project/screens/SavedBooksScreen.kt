@@ -50,17 +50,25 @@ import java.time.format.DateTimeFormatter
 
 /**
  * SavedBooksScreen Composable:
- *  This composable function represents the saved books screen of the application.
- *  It displays a list of saved books with their details, including the book name,
- *  prompt, length, and summary.
- *  The summaries are fetched from the database using the fetchSavedSummaries function.
- *  The saved summaries are sorted based on the selected sort option.
- *  The sort options are "ID", "Name", "Length", and "Date".
- *  The sort option is initially set to "ID".
- *  The saved summaries are displayed in a lazy column.
- *  Each saved summary is represented by a card with the book name, prompt, length,
- *  and summary details.
- *  The summary details are displayed in a scrollable text field.
+ * This composable function represents the saved books screen of the application.
+ * It displays a list of saved books with their details, including the book name,
+ * prompt, length, and summary.
+ * The summaries are fetched from the database using the fetchSavedSummaries function.
+ * The saved summaries are sorted based on the selected sort option.
+ * The sort options are "ID", "Name", "Length", and "Date".
+ * The sort option is initially set to "ID".
+ * The saved summaries are displayed in a lazy column.
+ * Each saved summary is represented by a card with the book name, prompt, length,
+ * and summary details.
+ * The summary details are displayed in a scrollable text field.
+ * The expanded state of the summary details is toggled when the summary is clicked.
+ * The sort option is displayed in a dropdown menu.
+ * The sort option is initially set to "ID".
+ * The sort option can be changed by selecting a different option from the dropdown menu.
+ *
+ * @param modifier The modifier to be applied to the layout.
+ *
+ * @return Unit
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

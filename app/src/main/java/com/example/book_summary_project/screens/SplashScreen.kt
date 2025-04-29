@@ -31,9 +31,16 @@ import com.google.firebase.auth.GoogleAuthProvider
 
 /**
  * SplashScreen Composable:
- *  This composable function represents the splash screen of the application.
- *  It displays a welcome message and provides options for user authentication
- *  using Google Sign-In and email/password login.
+ * This composable function represents the splash screen of the application.
+ * It displays a welcome message and provides options for user authentication
+ * using Google Sign-In and email/password login.
+ * The onLoginSuccess callback function is triggered when the user successfully
+ * logs in using Google Sign-In or email/password login.
+ *
+ * @param context The application context.
+ * @param onLoginSuccess A callback function to be triggered when the user successfully
+ *
+ * @return Unit
  */
 @Composable
 fun SplashScreen(

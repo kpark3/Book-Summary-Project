@@ -14,9 +14,9 @@ import com.example.book_summary_project.destinations.Destination
 /**
  * Bottom Navigation Bar for the app with navigation to Summary, Saved Books, and Profile screens
  *
- * to adjust the height of the navigation bar, change the height parameter
- * in the NavigationBar function, before the {}
- * ( modifier = Modifier.height(56.dp) )
+ * @param navController NavController to navigate between screens
+ *
+ * @return Unit
  */
 @Composable
 fun BottomNav(navController: NavController) {

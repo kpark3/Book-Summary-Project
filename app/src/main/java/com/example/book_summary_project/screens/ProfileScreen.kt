@@ -28,9 +28,13 @@ import androidx.compose.ui.platform.LocalContext
 /** ProfileScreen Composable:
  * This composable function represents the profile screen of the application.
  * It displays the user's information and provides an option to log out.
- *  The onLogout callback function is triggered when the user clicks the "Log Out" button.
- *  It performs the necessary logout actions and navigates to the login screen.
- *  The user's information includes the username and email.
+ * The onLogout callback function is triggered when the user clicks the "Log Out" button.
+ * It performs the necessary logout actions and navigates to the login screen.
+ * The user's information includes the username and email.
+ *
+ * @param onLogout A callback function to be triggered when the user clicks the "Log Out" button.
+ *
+ * @return Unit
  */
 @Composable
 fun ProfileScreen(onLogout: () -> Unit) {
